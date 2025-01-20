@@ -1,0 +1,6 @@
+:load <filename(s)>
+:reload
+:type <expr>
+:info <name>
+:quit
+:?
