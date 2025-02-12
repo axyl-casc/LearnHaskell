@@ -4,3 +4,6 @@
 :info <name>
 :quit
 :?
+
+
+ghci ____.hs
