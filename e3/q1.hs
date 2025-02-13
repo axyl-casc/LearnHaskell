@@ -26,6 +26,9 @@ drop n (x:xs)
     | n > 0 = drop (n-1) xs
     | otherwise = xs
 
-unzip :: [(a,b)] -> ([a],[b])
-unzip [(a,b)] = ([a],[b])
+unzip :: [(a, b)] -> ([a], [b])
+unzip [] = ([], [])
+unzip ((a, b) : xs) = (a : as, b : bs)
+  where (as, bs) = unzip xs
 
+concat :: [[a]] -> [a]
