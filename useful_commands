@@ -7,3 +7,5 @@
 
 
 ghci ____.hs
+
+import Prelude hiding (fun1, fun2)
